@@ -568,6 +568,8 @@ input[type=number]:focus {
   margin-right: 40px;
 }
 
+.profilelink br {}
+
 /* Home page link */
 #Findoutmore {
   width: 20%;
