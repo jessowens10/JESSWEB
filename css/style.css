@@ -622,7 +622,7 @@ input[type=number]:focus {
   }
 
   #homepagepara {
-    font-size: 40px;
+    font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -669,7 +669,7 @@ input[type=number]:focus {
   }
 
   #homepagepara {
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: -40px;
