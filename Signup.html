@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="Assets/Fonts/web/fontsheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+
+</head>
+
+<body>
+
+  <div class="header" id="header">
+    <a href="index.html" class="logo">Home</a>
+    <div class="header-right">
+      <a class="active" href="#Signup">Signup</a>
+      <a href="Login.html">Log In</a>
+      <a href="SaveFeature.html">Features</a>
+      <a href="https://www.apple.com/au/ios/app-store/" target="_blank">Get the App</a>
+    </div>
+  </div>
+
+  <div class="flip-this">
+    <img width=50% alt="BLUEMENUDOTHERE" src="css/redsvg.svg">
+  </div>
+
+  <div id="sec">
+    <div class="container">
+      <div class="left-sidebar"></div>
+      <div class="content">
+        <h2>Sign in</h2>
+        <div id="numberbox">
+          <u>1</u>234 <html>
+        </div>
+        <form>
+          <div id="fewdetails">
+
+            <p> Lets get your account set up </p>
+
+            <div class="form-group">
+              <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+              <div class="messages"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="lastname" placeholder="Lastname">
+              <div class="messages"></div>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" id="email" placeholder="Email">
+              <div class="messages"></div>
+            </div>
+
+            <div class="form-group">
+              <input type="number" name="Mobile" placeholder="Mobile">
+              <div class="messages"></div>
+            </div>
+
+            <div id="fpasswordsignin">
+              <p class="form-text"> <strong>Already a member?</strong><a href="Login.html" target="_blank">Login Here</a></p>
+            </div>
+
+            <div class="form-group">
+              <a href="#PageOne" class="submit-button">
+                <input type="submit" value="Next">
+
+              </a>
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="PageOne">
+    <div id="sec">
+      <div class="container">
+        <div class="left-sidebar">
+        </div>
+
+        <div class="content">
+          <h3>Few more details</h3>
+          <div id="numberbox">
+            1<u>2</u>34
+          </div>
+
+          <form>
+            <div class="form-group">
+              <input type="text" name"adress" id="adress" placeholder="Adress">
+              <div class="messages"></div>
+            </div>
+
+            <div class="form-group">
+              <input type="number" name="Post Code" id="postcode " placeholder="Post Code">
+              <div class="messages"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="State" id="state" placeholder="State">
+              <div class="messages"></div>
+            </div>
+            <div class="form-group">
+              <input type="password" name=password placeholder="Password">
+              <div class="messages"></div>
+            </div>
+            <div class="form-group">
+              <input type="password" name=password placeholder=" Confirm Password">
+              <div class="messages"></div>
+            </div>
+            <div id="tick">
+              <input type="checkbox">
+              <label for="remember Me">Remember me </label>
+            </div>
+            <div id="fpasswordsignin">
+              <p class="form-text"> <strong>Already a member?</strong><a href="Login.html" target="_blank">Login Here</a></p>
+            </div>
+
+            <div class="form-group">
+              <a href="#PageTwo">
+                <div class="submit-button">
+                  <input type="submit" value="Next">
+                </div>
+              </a>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="PageTwo" style="width:100%; height: 100%;margin-top:35px;">
+    <div id="sec">
+      <div class="container">
+        <div class="left-sidebar">
+        </div>
+
+        <div class="content">
+          <h3>ID Verification </h3>
+
+          <div id="numberbox">
+            12<u>3</u>4
+          </div>
+
+          <form>
+            <div class="form-group">
+              <input type="number" onfocus="this.value=''" value="Drivers licence number " placeholder="Drivers licence number ">
+            </div>
+            <div class="form-group">
+              <input type="number" onfocus="this.value=''" value="Expiry" placeholder="Expiry">
+            </div>
+
+            <div class="form-group">
+              <a href="#PageThree">
+                <div class="submit-button">
+                  <input type="submit" value="Next">
+                </div>
+              </a>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="PageThree">
+    <div id="sec">
+      <div class="container">
+        <div class="left-sidebar"></div>
+        <div class="content">
+          <h3>Account Confirmation!</h3>
+          <h3 id="cardbesent"> Your card has been sent to you <div id="myUsername"></div>
+          </h3>
+          <div>
+            <IMG SRC="css/mygiffy.gif">
+          </div>
+          <div>
+            <h2 class="profilelink">
+              <a href="Profile.html" target="_blank" style="font-size: 40px;">Your Profile</a>
+              <br>
+              <a href="SaveFeature.html" target="_blank" style="font-size: 40px;">Features</a>
+              <h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#header">
+
+  </a>
+
+  <a href="#sec" id="goUp">
+    Back
+  </a>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+<script src="js/loginscript.js"></script>
+
+</html>

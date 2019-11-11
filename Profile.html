@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="Assets/Fonts/web/fontsheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Profile </title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html" class="logo">Home</a>
+    <div class="header-right">
+      <a class="active" style="color:#92CAD5;" href="#home">Profile</a>
+      <a href=" Login.html">Log In</a>
+      <a href="Signup.html">Sign up</a>
+    </div>
+  </div>
+
+  <div class="flip-this">
+    <img width=50% alt="BLUEMENUDOTHERE" src="css/real blue dot.svg">
+  </div>
+
+  <h2 id="saveheading">Profile</h2>
+
+
+  <div class="grid-container">
+    <div class="item1">
+      <img id="bluephone" src="css/bluephone.svg">
+    </div>
+
+    <h2 class="profilelink"> What do you want to start with today <div id="myUsername"></div>
+    </h2>
+  </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script>
+    let username = localStorage.getItem("username");
+    console.log(username);
+
+    let usernameText = document.createElement("p");
+    usernameText.textContent = username;
+    document.getElementById("myUsername").appendChild(usernameText);
+  </script>
+</body>
+
+
+</html>

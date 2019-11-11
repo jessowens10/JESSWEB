@@ -1,0 +1,26 @@
+/*
+ * Web Fonts from colophon-foundry.org
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Colophon Foundry. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2019 Colophon Foundry
+ *
+ * Licenced to Jessica Owens
+ */
+@font-face {
+  font-family: 'raisonne-book-pro';
+  src: url('raisonne-book-pro.eot');
+  src: url('raisonne-book-pro.eot?#iefix') format('embedded-opentype'),
+    url('raisonne-book-pro.woff2') format('woff2'),
+    url('raisonne-book-pro.woff') format('woff'),
+    url('raisonne-book-pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'raisonne-book-pro', Fallback, sans-serif;
+}

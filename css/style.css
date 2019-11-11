@@ -1,0 +1,690 @@
+/* Global settings*/
+/*******************/
+body {
+  text-align: center;
+  background-color: #EFE1DC;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global settings*/
+/*******************/
+/* Style the header with a grey background and some padding */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  overflow: hidden;
+  background-color: #EFE1DC;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  font-family: 'raisonne-book-pro';
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #FFFFFF;
+  opacity: 0.5;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  color: #C14E49;
+  ;
+}
+
+/* Float the link section to the right */
+.header-right {
+  position: absolute;
+  right: 10px;
+}
+
+#goUp {
+  position: fixed;
+  text-decoration: none;
+  padding-top: 40px;
+  font-family: 'raisonne-book-pro';
+  color: grey;
+  top: 90%;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  /* border-radius: 100px;
+  background-color: grey; */
+}
+
+/* BACK BUTTON ON SIGNUP */
+/* a {
+  position: fixed;
+  top: 90%;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+
+/* Grid settings*/
+/*******************/
+.container {
+  display: grid;
+  grid-template-columns: [left-sidebar] 1fr [content] 3fr [right-sidebar] 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-sidebar {
+  grid-column: left-sidebar;
+}
+
+.content {
+  grid-column: content;
+  padding: 5px;
+  font-size: 115px;
+  color: #C14E49;
+  margin-top: 25px;
+}
+
+.content h2 {
+  margin: 5px;
+}
+
+.content h3 {
+  font-size: 75px;
+  color: #C14E49;
+  margin-top: 100px;
+  font-family: 'raisonne-book-pro';
+}
+
+.right-sidebar {
+  grid-column: right-sidebar;
+}
+
+/* HOMEP Page */
+/*******************/
+#homepagepara {
+  font-family: 'raisonne-book-pro';
+  font-size: 45px;
+  color: #937D85;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-top: 0px;
+  margin-bottom: 400px;
+  /* align-content: center; */
+}
+
+/* Specific IDs for LANDING PAGE */
+/*******************/
+#orange {
+  position: relative;
+  right: 20%;
+}
+
+/* Login Page */
+/*******************/
+#sidewaysfeatures {
+  position: absolute;
+  color: #C14E49;
+  width: 25t%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  font-family: 'raisonne-book-pro';
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.form-text {
+  font-size: 12px;
+  color: grey;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.submit-button {
+  padding: 8px 10px;
+  background: #FFFFFF;
+  border: 0 none;
+  font-family: 'raisonne-book-pro';
+  color: #C14E49;
+  font-size: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  align-content: center;
+  c opacity: 0.6;
+}
+
+input[type=submit] {
+  padding: 8px 10px;
+  background: #FFFFFF;
+  border: 0 none;
+  font-family: 'raisonne-book-pro';
+  color: #C14E49;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  align-content: center;
+  c opacity: 0.6;
+}
+
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #EFE1DC;
+  font-family: 'raisonne-book-pro';
+  font-size: 12px;
+  color: #C14E49;
+}
+
+.form-group-sidebyside {
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+input[type=text]:focus {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ADD8E6;
+}
+
+input[type=email] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #EFE1DC;
+  font-family: 'raisonne-book-pro';
+  font-size: 12px;
+  color: #C14E49;
+}
+
+input[type=email]:focus {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ADD8E6;
+}
+
+input[type=password] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #EFE1DC;
+  font-family: 'raisonne-book-pro';
+  font-size: 12px;
+  color: #C14E49;
+}
+
+input[type=password]:focus {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ADD8E6;
+  color: #C14E49;
+}
+
+input[type=number] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #EFE1DC;
+  font-family: 'raisonne-book-pro';
+  font-size: 12px;
+  color: #C14E49;
+}
+
+input[type=number]:focus {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ADD8E6;
+  color: #C14E49;
+}
+
+#fpasswordsignin {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 3px 0;
+  border: none;
+  text-shadow: none;
+}
+
+#tick {
+  color: grey;
+  font-size: 12px;
+  /* margin-left: 200px; */
+}
+
+/* #submitb {
+  justify-content: center;
+  /* -----------------------------------------------------GET THIS TO WORK  */
+/* } */
+#submit {
+  padding: 8px 15px;
+  background: #FFFFFF;
+  border: 0 none;
+  font-family: 'raisonne-book-pro';
+  color: #C14E49;
+  font-size: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  align-content: center;
+  opacity: 0.6;
+}
+
+#backbutton {
+  align-content: flex-start;
+}
+
+.messages {
+  font-size: 12px;
+  width: 100%;
+  margin-left: auto;
+}
+
+/* Specific IDs */
+/*******************/
+#scrollfinvestor {
+  position: absolute;
+  top: 500px;
+  color: #C14E49;
+  width: 80%;
+  height: 100%;
+  /* margin-left: 30px; */
+}
+
+/* transform-origin: 0 0;
+  transform: rotate(90deg); */
+#sec {
+  width: 100%;
+  height: 1080px;
+  color: white;
+  margin bottom: 25px;
+}
+
+#sec a {
+  text-decoration: none;
+  color: white;
+  margin: 25px 25px;
+}
+
+#Login1details {
+  text-align: center;
+  color: red;
+}
+
+#biggap {
+  height: 400px;
+}
+
+#biggaplogin {
+  height: 600px;
+}
+
+#phone-wireframe {
+  background-image: url("orange.png");
+  background-size: auto;
+}
+
+/* Forgetpassword page ID's*/
+/*******************/
+#passwordchange {
+  font-family: 'raisonne-book-pro';
+  color: #C14E49;
+  font-size: 20px;
+}
+
+.Forgotpasswordtext {
+  font-family: 'raisonne-book-pro';
+  color: #C14E49;
+  font-size: 20px;
+}
+
+/* Save Page */
+/*******************/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 1;
+  grid-column-end: 3;
+}
+
+.item6 {
+  grid-row-start: 3;
+  grid-row-end: 8;
+  text-align: left;
+}
+
+#saveheading {
+  font-family: 'raisonne-book-pro';
+  padding: 2px;
+  margin-top: 50px;
+  font-size: 150px;
+  color: #92CAD5;
+}
+
+#savephone {
+  position: relative;
+}
+
+#kill {
+  margin-top: -10%;
+  font-family: 'raisonne-book-pro';
+  font-size: 45px;
+  color: #92CAD5;
+}
+
+.flip-this {
+  position: fixed;
+  background: transparent;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-this:hover {
+  transition: 0.9s;
+  transform: rotateZ(90deg);
+}
+
+#gapfiller {
+  height: 120px;
+}
+
+#redsvg {
+  width: 100%;
+}
+
+#iTwo {
+  top: 30%;
+  left: 20%;
+  position: absolute;
+  width: 6%;
+  height: 10%;
+}
+
+#iThree {
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  width: 6%;
+  height: 10%;
+}
+
+#iFour {
+  top: 80%;
+  left: 10%;
+  position: absolute;
+  width: 6%;
+  height: 10%;
+}
+
+#iFive {
+  top: 40%;
+  left: 70%;
+  position: absolute;
+  width: 6%;
+  height: 10%;
+}
+
+.icon:hover {
+  animation: shake 0.95s cubic-bezier(.36, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#stanicon {
+  position: absolute;
+}
+
+#TELSTRA {
+  position: absolute;
+}
+
+#optus {
+  position: absolute;
+}
+
+#netflix {
+  position: absolute;
+}
+
+/* Specific IDs for sign up */
+/*******************/
+#numberbox {
+  font-size: 25px;
+  margin-top: -25px;
+  color: rgba(255, 255, 255);
+  stroke: black;
+  stroke-width: .5;
+  text-shadow: #000 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#PageOne {
+  width: 100%;
+  height: 100%;
+  background-color: #EFE1DC;
+  margin-top: 35px;
+}
+
+#fewdetails {
+  font-family: 'raisonne-book-pro';
+  font-size: 25px;
+  color: grey;
+}
+
+#fewdetailsmore {
+  font-family: 'raisonne-book-pro';
+  font-size: 45px;
+  color: #EFE1DC;
+}
+
+#cardbesent {
+  font-family: 'raisonne-book-pro';
+  font-size: 20px;
+}
+
+.profilelink {
+  font-family: 'raisonne-book-pro';
+  color: white;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Home page link */
+#Findoutmore {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  margin-left: 60px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  .content h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    margin-top: 100px;
+  }
+
+  #saveheading {
+    margin-top: 100px;
+    font-size: 22px;
+  }
+
+  .flip-this {
+    width: 20px;
+    left: 15px;
+  }
+
+  #kill {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  #iTwo, #iThree, #iFour, #iFive {
+    width: 3%;
+    height: 5%;
+  }
+
+  #scrollfinvestor {
+    width: 20%;
+    height: 20%;
+    margin-left: 40px;
+  }
+
+  #homepagepara {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #numberbox {
+    margin-top: 15px;
+    font-size: 17px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .content h2 {
+    font-size: 48px;
+  }
+
+  .content {
+    margin-top: 100px;
+  }
+
+  #saveheading {
+    margin-top: 100px;
+    font-size: 48px;
+  }
+
+  .flip-this img {
+    width: 50%;
+  }
+
+  #kill {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  #iTwo, #iThree, #iFour, #iFive {
+    width: 3%;
+    height: 5%;
+  }
+
+  #scrollfinvestor {
+    width: 10%;
+    height: 10%;
+    margin-left: 80px;
+  }
+
+  #homepagepara {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: -40px;
+  }
+
+  #numberbox {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .content h2 {
+    font-size: 1.5em;
+  }
+}

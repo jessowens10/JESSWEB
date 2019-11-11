@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="Assets/Fonts/web/fontsheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <a href="index.html" class="logo">Home</a>
+    <div class="header-right">
+      <a class="active" href="#Login">Log In</a>
+      <a href="Signup.html">Sign up</a>
+      <a href="https://www.apple.com/au/ios/app-store/" target="_blank">Get the App</a>
+    </div>
+  </div>
+
+  <div class="flip-this">
+    <img width=50% alt="BLUEMENUDOTHERE" src="css/redsvg.svg">
+  </div>
+
+  <div id="sec">
+    <div class="container">
+      <div class="left-sidebar"></div>
+      <div class="content">
+        <h3>Welcome back <div id="myUsername"></div>
+        </h3>
+
+        <div>
+          <h2 class="profilelink">
+            <a href="Profile.html" target="_blank" style="font-size: 40px;">Your Profile</a>
+            <br>
+            <a href="SaveFeature.html" target="_blank" style="font-size: 40px;">Features</a>
+            <h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
+  <script>
+    let username = localStorage.getItem("username");
+    console.log(username);
+
+    let usernameText = document.createElement("p");
+    usernameText.textContent = username;
+    document.getElementById("myUsername").appendChild(usernameText);
+  </script>
+
+</body>
+
+
+</html>
