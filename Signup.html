@@ -204,6 +204,13 @@
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-<script src="js/loginscript.js"></script>
+<script>
+  let username = localStorage.getItem("username");
+  console.log(username);
+
+  let usernameText = document.createElement("p");
+  usernameText.textContent = username;
+  document.getElementById("myUsername").appendChild(usernameText);
+</script>
 
 </html>
